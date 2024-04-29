@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--favicon-->
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="project.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="enabler.js" defer></script>
+</head>
+<body class="body">
+  <header>CIT Programs Lead to Careers in IT!</header>
+<!--Concentration pages make use of a hamburger menu-->
+  <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container">
+          <div class="collapse navbar-collapse" id="navMenu">
+              <ul class="navbar-nav mx-5">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="software.html">Software</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="networking.html">Networking</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="data.html">Data Management</a>
+                  </li>
+              </ul>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+  </nav>
+<!--I only used a single column on the concentration pages, as I wanted to keep them clean and simple-->
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col">
+<!--the class .infoBox has some styling and contains the label for the accordion. I connected the label to the accordion using "for"-->
+              <div class="infoBox"><label for="accordionSecurity">Learn more about careers in cybersecurity!</label></div>
+<!--the accordions have some stying as well; I changed them so that they reflect Purdue colors as best as I could-->
+              <div class="accordion accordion-flush" id="accordionSecurity" style="width:75%; margin:auto;">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Cybersecurity Expert</button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionSecurity">
+                          <div class="accordion-body">Cyber Security experts or specialists are a significant part of organizations who are responsible for securing the network and information systems of the organization. They do so by detecting, managing, analyzing, presenting, and responding to cyberattacks, security threats, and other malicious acts.</div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Security Analyst</button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionSecurity">
+                          <div class="accordion-body">Security analysts, also known as information security analysts, monitor, prevent, and stop attacks on data. These professionals create and implement firewalls and software systems to protect an organization's data and networks.</div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Consultant</button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionSecurity">
+                          <div class="accordion-body">An IT Consultant is a knowledgeable professional who helps businesses develop, integrate, and maximize the value of IT systems. They provide strategic advice, troubleshoot technical issues, and offer expertise in areas such as hardware, software, networks, and project management.</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+<!--Footer with a bit of text-->
+  <footer>Consider a career in IT!</footer>
+</body>
+</html>

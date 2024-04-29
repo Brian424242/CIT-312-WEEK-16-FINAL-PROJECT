@@ -1,0 +1,107 @@
+$purdue1: #000000;
+$purdue2: #CFB991;
+$purdue3: #DAAA00;
+$purdue4: #8E6F3E;
+$purdue5: #EBD99F;
+$purdue6: #DDB945;
+
+
+.body {
+    background-color: $purdue1;
+    color: $purdue3;
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    background-color: $purdue4;
+    color: $purdue1;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+    @media screen and (max-width: 850px) {
+        font-size: 30px;
+        padding-top: 25px;
+    };
+    @media screen and (max-width: 550px) {
+        font-size: 25px;
+        padding-top: 30px;
+    };
+}
+
+footer {
+    background-color: $purdue4;
+    color: $purdue1;
+    width: 100%;
+    height: 30px;
+    text-align: right;
+    margin-top: 300px;
+    padding: 2px;
+    padding-right: 25px;
+    @media screen and (max-width: 550px) {
+        font-size: 13px;
+        padding-top: 5px;
+    };
+}
+
+.accordion {
+    color: $purdue1;
+    button {
+        background-color: $purdue6;
+    };
+}
+
+
+.accordion-body {
+    background-color: $purdue5;
+}
+
+
+.infoBox {
+    color: $purdue1;
+    background-color: $purdue3;
+    width: 75%;
+    height: 50px;
+    font-size: xx-large;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    @media screen and (max-width: 925px) {
+        font-size: 25px;
+        padding-top: 5px;
+    };
+    @media screen and (max-width: 750px) {
+        font-size: 20px;
+        padding-top: 10px;
+    };
+    @media screen and (max-width: 600px) {
+        font-size: 15px;
+        padding-top: 15px;
+    };
+}
+
+.navbar {
+    background-color: $purdue1;
+    color: $purdue3;
+}
+
+fieldset {
+    display: inline-block;
+    color: $purdue6;
+    label {
+        color: $purdue5;
+    }
+}
+
+.quizBox {
+    border: 1px solid $purdue2;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.quizLabel {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: xx-large;
+}

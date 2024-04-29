@@ -1,0 +1,11 @@
+1) SCSS is used primarily to establish the six different Purdue colors that are used throughout the web pages. Additionally, nesting is used within the SCSS in order to alter the pages depending on screen size and to change the text color within the quiz fieldsets.
+
+2) Responsiveness is achieved through the use of bootstrap and a fluid container and differing column sizes depending on screen size. Additionally, nesting is used within the SCSS to alter the pages depending on the screen size.
+
+3) A hamburger menu is created and used. I only utilized this menu on the individual category pages and not on the home page, as I wanted to push the user to use the buttons on the home page for navigation to the individual category pages. I made the navbar dark so that it works well with the chosen color scheme and black background on the pages.
+
+4) A favicon is included. I kept the favicon simple and applied it to all four pages.
+
+5) I used many bootstrap components. Specifically, I used accordions, popovers, buttons, button groups, and navbar. I used the accordions to display the names and information for the various careers; this seemed like the best way to present this information, as it allows for a collapsible item and keeps the page from getting too cluttered. I really wanted these pages to feel clean and uncluttered. I used popovers on the buttons on the main page; they provide direction to the user that they can click on the images to be taken to a new page. I used buttons and button groups both with the four images on the main page that represent the four career category pages. Lastly, I used the navbar component to create the hamburger menu for three of the four pages.
+
+6) I used semantic tags as much as possible. I really tried to set things up so that I would not need to use aria at all. There are header tags, footer tags, labels, etc throughout the pages. In a couple of instances, I did add a for="..." to a label if it was not clear what the label was for. I also added alt information to the image buttons on the home page, so that a screen reader reads off the popover text when the user hovers over the button. Because I was able to add these to the labels I did not think that there were any instances where using aria content would be necessary.

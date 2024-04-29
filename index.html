@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--favicon-->
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="project.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="enabler.js" defer></script>
+</head>
+<body class="body">
+    <header>CIT Programs Lead to Careers in IT!</header>
+    <div class="container-fluid">
+<!--this row will contain the concentrations/images that act as buttons to the other pages-->
+        <div class="row" style="margin-bottom: 75px;">
+<!--only a single column needed here for the images/buttons-->
+            <div class="col">
+                <div class="container-fluid" style="margin-top: 50px;">
+<!--this div contains the label for the buttons. The label refers to the ID of the button group, "ITconcentrations"-->
+                    <div>
+                        <h1 style="text-align: center; margin-bottom: 25px;"><label for="ITconcentrations">IT Concentrations</label></h1>
+                    </div>
+<!--here is the button group with four buttons, one representing each concentration area. This column also makes use of popovers on each button-->
+                    <div class="btn-group-lg" style="text-align: center;" role="group" id="ITconcentrations">
+                        <button class="btn">
+                            <div class="tooltip-area">
+                                <span data-bs-toggle="tooltip" data-bs-placement="top" title="Software. Click me to see careers in software!">
+                                    <a href="software.html"><img src="images/software.JPG" style="width:350px; height:350px;" alt="Software. Click me to see careers in software!"></a>
+                                </span> 
+                            </div>
+                        </button>
+                        <button class="btn">
+                            <div class="tooltip-area">
+                                <span data-bs-toggle="tooltip" data-bs-placement="top" title="Networking. Click me to see careers in Networking!">
+                                    <a href="networking.html"><img src="images/networking.JPG" style="width:350px; height:350px;" alt="Networking. Click me to see careers in Networking!"></a>
+                                </span> 
+                            </div>
+                        </button>
+                        <button class="btn">
+                            <div class="tooltip-area">
+                                <span data-bs-toggle="tooltip" data-bs-placement="top" title="Data Management. Click me to see careers in Data Management!">
+                                    <a href="data.html"><img src="images/data.JPG" style="width:350px; height:350px;" alt="Data Management. Click me to see careers in Data Management!"></a>
+                                </span> 
+                            </div>
+                        </button>
+                        <button class="btn">
+                            <div class="tooltip-area">
+                                <span data-bs-toggle="tooltip" data-bs-placement="top" title="Cybersecurity. Click me to see careers in Cybersecurity!">
+                                    <a href="security.html"><img src="images/security.JPG" style="width:350px; height:350px;" alt="Cybersecurity. Click me to see careers in Cybersecurity!"></a>
+                                </span> 
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--this row will contain the interactive quiz-->
+        <div class="row">
+<!--this label is for the interactive quiz. I split the quiz into two boxes as I felt it looked better this way, but this might cause an issue with labels. At present, the one label is connected to both quiz boxes by the name "quizIT.-->
+            <label for="quizIT" class="quizLabel"><h2><u>Test your Knowledge!</u></h2><br>
+            Browse the different IT career categories above, then take the quiz below to see how much you learned!</label>
+<!--first of two columns in the quiz row. This column contains five of the ten questions. It responds to screen size; the two columns stack on top of each other when the screen gets small enough-->
+            <div class="col-10 col-lg-5 col-md-10 col-sm-10 quizBox">
+                <form id="quizIT" method="get" action="itStuff.php">
+                            <fieldset>
+                                <legend>Which career collates and analyses data to provide new information to stakeholders?</legend>
+                                <input type="radio" id="Q1Opt1" name="Q1" value="Q1Opt1">
+                                <label for="Q1Opt1">Software Developer</label><br/>
+                                <input type="radio" id="Q1Opt2" name="Q1" value="Q1Opt2">
+                                <label for="Q1Opt2">Data Research Scientist</label><br/>
+                                <input type="radio" id="Q1Opt3" name="Q1" value="Q1Opt3">
+                                <label for="Q1Opt3">Network Administrator</label><br/>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Which career detects and responds to cyberattacks?</legend>
+                                <input type="radio" id="Q2Opt1" name="Q2" value="Q2Opt1">
+                                <label for="Q2Opt1">Cybersecurity Expert</label><br/>
+                                <input type="radio" id="Q2Opt2" name="Q2" value="Q2Opt2">
+                                <label for="Q2Opt2">Network Architect</label><br/>
+                                <input type="radio" id="Q2Opt3" name="Q2" value="Q2Opt3">
+                                <label for="Q2Opt3">Chief Information Officer</label><br/>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Which career is responsible for planning, designing and implementing data communication networks?</legend>
+                                <input type="radio" id="Q3Opt1" name="Q3" value="Q3Opt1">
+                                <label for="Q3Opt1">Coder</label><br/>
+                                <input type="radio" id="Q3Opt2" name="Q3" value="Q3Opt2">
+                                <label for="Q3Opt2">Network Architect</label><br/>
+                                <input type="radio" id="Q3Opt3" name="Q3" value="Q3Opt3">
+                                <label for="Q3Opt3">Games Developer</label><br/>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Which career is a software developer specializing in video game development?</legend>
+                                <input type="radio" id="Q4Opt1" name="Q4" value="Q4Opt1">
+                                <label for="Q4Opt1">Games Developer</label><br/>
+                                <input type="radio" id="Q4Opt2" name="Q4" value="Q4Opt2">
+                                <label for="Q4Opt2">Industry Analyst</label><br/>
+                                <input type="radio" id="Q4Opt3" name="Q4" value="Q4Opt3">
+                                <label for="Q4Opt3">Dev Ops Engineer</label><br/>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Which career is a high-ranking executive responsible for managing and successfully implementing the information and computer technology systems of a company?</legend>
+                                <input type="radio" id="Q5Opt1" name="Q5" value="Q5Opt1">
+                                <label for="Q5Opt1">Cybersecurity Expert</label><br/>
+                                <input type="radio" id="Q5Opt2" name="Q5" value="Q5Opt2">
+                                <label for="Q5Opt2">Web Programmer</label><br/>
+                                <input type="radio" id="Q5Opt3" name="Q5" value="Q5Opt3">
+                                <label for="Q5Opt3">Chief Information Officer</label><br/>
+                            </fieldset>
+                </form>
+             </div>
+<!--column two in the quiz row, same as the first but different questions. Behaves the same way as far as responsiveness goes-->
+             <div class="col-10 col-lg-5 col-md-10 col-sm-10 quizBox">
+                <form id="quizIT" method="get" action="itStuff2.php">
+                            <fieldset>
+                                <legend>Which career is expected to be able to work in all the layers of the application (front-end and back-end)?</legend>
+                                <input type="radio" id="Q6Opt1" name="Q6" value="Q6Opt1">
+                                <label for="Q6Opt1">Test Engineer</label><br/>
+                                <input type="radio" id="Q6Opt2" name="Q6" value="Q6Opt2">
+                                <label for="Q6Opt2">Database Administrator</label><br/>
+                                <input type="radio" id="Q6Opt3" name="Q6" value="Q6Opt3">
+                                <label for="Q6Opt3">Full stack developer</label><br/>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Which career designs and develops computer systems and their physical components?</legend>
+                                <input type="radio" id="Q7Opt1" name="Q7" value="Q7Opt1">
+                                <label for="Q7Opt1">Hardware Engineer</label><br/>
+                                <input type="radio" id="Q7Opt2" name="Q7" value="Q7Opt2">
+                                <label for="Q7Opt2">Web Programmer</label><br/>
+                                <input type="radio" id="Q7Opt3" name="Q7" value="Q7Opt3">
+                                <label for="Q7Opt3">Consultant</label><br/>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Which career is a knowledgeable professional who helps businesses develop, integrate, and maximize the value of IT systems?</legend>
+                                <input type="radio" id="Q8Opt1" name="Q8" value="Q8Opt1">
+                                <label for="Q8Opt1">Mobile Apps Developer</label><br/>
+                                <input type="radio" id="Q8Opt2" name="Q8" value="Q8Opt2">
+                                <label for="Q8Opt2">IT Consultant</label><br/>
+                                <input type="radio" id="Q8Opt3" name="Q8" value="Q8Opt3">
+                                <label for="Q8Opt3">Data Analyst</label><br/>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Which career designs the experience a user would go through when interacting with a company, its services, and its products?</legend>
+                                <input type="radio" id="Q9Opt1" name="Q9" value="Q9Opt1">
+                                <label for="Q9Opt1">Industry Analyst</label><br/>
+                                <input type="radio" id="Q9Opt2" name="Q9" value="Q9Opt2">
+                                <label for="Q9Opt2">Database Administrator</label><br/>
+                                <input type="radio" id="Q9Opt3" name="Q9" value="Q9Opt3">
+                                <label for="Q9Opt3">UX/UI Designer</label><br/>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Which career is a programmer who develops World Wide Web applications using a client–server model?</legend>
+                                <input type="radio" id="Q10Opt1" name="Q10" value="Q10Opt1">
+                                <label for="Q10Opt1">Web Developer</label><br/>
+                                <input type="radio" id="Q10Opt2" name="Q10" value="Q10Opt2">
+                                <label for="Q10Opt2">Security Analyst</label><br/>
+                                <input type="radio" id="Q10Opt3" name="Q10" value="Q10Opt3">
+                                <label for="Q10Opt3">Database Administrator</label><br/>
+                            </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+<!--Footer with a bit of text-->
+    <footer>Consider a career in IT!</footer>
+</body>
+</html>
